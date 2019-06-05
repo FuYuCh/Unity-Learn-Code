@@ -3,8 +3,9 @@
 [System.Serializable]
 public class Warrior
 {
-    private int exp;
+    
     public int lv;
+    private int _exp;
     /// <summary>
     /// 取得與設定戰士的經驗值
     /// </summary>
@@ -12,12 +13,17 @@ public class Warrior
     {
         get
         {
-            return lv * 10;
+            _exp = lv * 10;
+            return _exp;
         }
         set
         {
             
-            exp = value;
+            _exp = value;
         }
+    }
+    public void ShowExp()
+    {
+        Debug.Log("戰士經驗-取得:" + _exp);
     }
 }

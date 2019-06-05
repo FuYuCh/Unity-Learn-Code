@@ -13,11 +13,15 @@ public class GameManager : MonoBehaviour  //檔案名稱跟類別名稱需相同
         SoldierA.SetExp(100);
         Debug.Log("士兵經驗值 - 設定" + SoldierA.exp);
 
-        
-        WarriorA.lv = 50;
+
+        WarriorA.lv = 60;
         Debug.Log("戰士經驗值 - 取得" + WarriorA.Exp);
+
         WarriorA.Exp = 777;
-        Debug.Log("戰士經驗值 - 取得" + WarriorA.Exp);
+        WarriorA.ShowExp();
+        //Debug.Log("戰士經驗值 - 取得" + WarriorA.Exp);
+
+
 
     }
 }
