@@ -7,11 +7,25 @@ public class Dog    //建立類別
     public string name;
     public float weight;
     public string type;
-    public string sex;
     public string color;
-    public int age;
+
+    private string _sex;
+    private int _age;
     #endregion
 
+    #region 建構函式
+    //建構函式可以多載
+    public Dog()
+    {
+
+    }
+
+    public Dog(string vsex ,int vage)
+    {
+        this._sex = vsex;
+        this._age = vage;
+    }
+    #endregion
     #region 方法
     /// <summary>
     /// 狗狗叫的方法
@@ -27,7 +41,7 @@ public class Dog    //建立類別
     /// <returns>狗狗年齡</returns>
     public int ConvertAge()
     {
-        return age * 7;
+        return _age * 7;
     }
     /// <summary>
     /// 狗狗吃東西的方法
