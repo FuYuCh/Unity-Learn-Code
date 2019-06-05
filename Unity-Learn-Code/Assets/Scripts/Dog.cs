@@ -1,7 +1,7 @@
 ﻿using UnityEngine;   //引用 API
-using System;
 
-
+[System.Serializable] // 它把會把裡面的內容序列化，
+                      // 公開的欄位會顯示在屬性面板上
 public class Dog    //建立類別
 {
     #region 欄位     //可以包括住程式碼 
